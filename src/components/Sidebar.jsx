@@ -1,3 +1,6 @@
+// this is the side bar component which open when user clicks on the hamburger menu present on the extreme right of the app.///
+
+//importing all the neccessary material ui component//
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -9,8 +12,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Link from "@mui/material/Link";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+
+//importing all the icons///
 
 import Hamburger from "../images/menu_FILL0_wght400_GRAD0_opsz48.svg";
 import GoogleIcon from "@mui/icons-material/Google";
@@ -27,6 +30,7 @@ export default function TemporaryDrawer() {
     right: false,
   });
 
+  // logic for toggling the state of drawer component//
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -131,6 +135,7 @@ export default function TemporaryDrawer() {
   );
 
   return (
+    // mapping over the iten of side bar is done
     <div>
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>

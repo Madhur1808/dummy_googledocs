@@ -12,13 +12,18 @@ import TemporaryDrawer from "./Sidebar";
 
 import CustomizedMenus from "./Menu";
 
+//creating the header section //
+
 const Header = () => {
   return (
     <div className="header ql-toolbar">
       <div className="left">
+        {/*  blue logo of google docs */}
         <div className="logo">
           <img src={logo} />
         </div>
+
+        {/* left part of navbar contains title ,small icons and the menu bar */}
         <div className="navbar">
           <div className="header1">
             <div className="title">Untitled Document</div>
@@ -33,6 +38,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      {/* this is the right part of header containing three icons, share button and a sidebar icon */}
       <div className="right">
         <img src={history} alt="history" />
         <img src={comment} alt="comment" />
@@ -43,6 +50,8 @@ const Header = () => {
             <p>Share</p>
           </div>
         </a>
+
+        {/* sidebar component */}
         <TemporaryDrawer />
       </div>
     </div>

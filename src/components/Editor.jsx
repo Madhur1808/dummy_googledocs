@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+//for text Editor i am using Quill.js//
+
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
 

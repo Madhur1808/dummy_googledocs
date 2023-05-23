@@ -6,7 +6,7 @@ import MenuItem from "@mui/material/MenuItem";
 
 import Divider from "@mui/material/Divider";
 
-/////////////
+// icons for the dropdown menu in the menu bar when user click on file or edit or any other options
 import ArticleIcon from "@mui/icons-material/Article";
 import FolderIcon from "@mui/icons-material/Folder";
 import AddToDriveIcon from "@mui/icons-material/AddToDrive";
@@ -24,6 +24,7 @@ import HistoryIcon from "@mui/icons-material/History";
 import InfoIcon from "@mui/icons-material/Info";
 import OfflinePinIcon from "@mui/icons-material/OfflinePin";
 
+//  designing the outline of dropdown menu//
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
@@ -77,6 +78,7 @@ export default function CustomizedMenus() {
     setAnchorEl(null);
   };
 
+  //using map function display the dropdown menu when user click on any option in menu bar//
   return (
     <div>
       {[

@@ -10,6 +10,8 @@
   min-height: 100vh;
   border: 1px solid #1414155f !important;
 }
+
+/*  changing the default csss of the toolbar of the text editor */
 .css-1nmdz5t {
   background-color: #f9fbfd !important;
 }
@@ -98,6 +100,8 @@ button > svg :hover {
   width: 25px;
   margin: 0 20px 0 10px;
 }
+
+/*  css for the share button */
 .button {
   display: flex;
   background-color: #c2e7ff;
@@ -135,6 +139,8 @@ button > svg :hover {
   height: 20px;
   margin-right: 7px;
 }
+
+/* css for changing the apppereance of scroll bar */
 
 /* width */
 ::-webkit-scrollbar {
