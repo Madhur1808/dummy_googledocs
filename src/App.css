@@ -1,38 +1,160 @@
 .App {
   text-align: center;
+  background-color: #f9fbfd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  background: #ffff;
+  width: 53%;
+  margin: 10px auto 10px auto !important;
   min-height: 100vh;
+  border: 1px solid #1414155f !important;
+}
+.css-1nmdz5t {
+  background-color: #f9fbfd !important;
+}
+
+.ql-toolbar.ql-snow {
+  width: 97%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #edf2fa;
+  border: none !important;
+  margin: 0 auto 0 auto;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.ql-formats > button :hover {
+  background-color: #b7b6b650;
+
+  color: #000000 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button > svg :hover {
+  color: #000000 !important;
+}
+
+.ql-formats > .ql-picker :hover {
+  background-color: #b7b6b650;
+
+  color: #000000 !important;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9fbfd;
+}
+
+.left {
+  display: flex;
+  margin-left: 14px;
+}
+
+.header2 {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.header1 {
+  display: flex;
+
+  padding-left: 5px;
+  padding-top: 25px;
+}
+.title {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.images {
+  margin: auto 10px auto 10px;
+}
+.images img {
+  margin: 0 5px 0 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-right: -10px;
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.right {
+  display: flex;
+  /* background-color: blue; */
+  align-items: center;
+}
+.right img {
+  height: 25px;
+  width: 25px;
+  margin: 0 20px 0 10px;
+}
+.button {
+  display: flex;
+  background-color: #c2e7ff;
+  align-items: center;
+  border-radius: 100px;
+  text-decoration: none;
+  width: 108px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 2px #9f9f9f;
+}
+
+.button-inside {
+  display: flex;
+  background-color: #c2e7ff;
+  align-items: center;
+  border-radius: 100px;
+  text-decoration: none;
+  width: 108px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button p {
+  color: #001d35;
+  font-size: 14px;
+  font-weight: 500;
+
+  font-family: Google Sans, Roboto, sans-serif;
+}
+.button img {
+  height: 20px;
+  margin-right: 7px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  margin-right: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-right: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a7a7a8;
 }
